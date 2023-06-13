@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wersyde - продажа игр</title>
+    <link rel="icon" href="img/icon.png" sizes="512x512" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    
+
+    <div class="message">
+        <a class="button open-popup"><ion-icon name="chatbubble-sharp"></ion-icon></a>
+    </div>
+
+    <div class="popup-bg">
+        <div class="popup">
+            <span class="close-popup"><ion-icon name="close-circle-outline"></ion-icon></span>
+            <p>ВКонтакте</p>
+        </div>
+    </div>
+
+    <div class="popup-bg1">
+        <div class="popup1">
+            <span class="close-popup1"><ion-icon name="close-circle-outline"></ion-icon></span>
+            <p>Оплата по QR-коду</p>
+            <img src="img/qr.jpg">
+        </div>
+    </div>
+
+    <div class="popup-bg2">
+        <div class="popup2">
+            <span class="close-popup2"><ion-icon name="close-circle-outline"></ion-icon></span>
+            <p>Оплата по QR-коду</p>
+            <img src="img/qr.jpg">
+        </div>
+    </div>
+
+    <div class="popup-bg3">
+        <div class="popup3">
+            <span class="close-popup3"><ion-icon name="close-circle-outline"></ion-icon></span>
+            <p>Оплата по QR-коду</p>
+            <img src="img/qr.jpg">
+        </div>
+    </div>
+    
+
+    <header>
+        <!-- <div class="container">
+            <div class="shopping">
+                <img src="img/cart-outline.svg">
+                <span class="quantity">0</span>
+            </div>
+            <div class="list"></div>
+        </div> -->
+        <div class="logo" onclick="slowScroll('#top')">
+            <span>Wersyde Маркет</span>
+        </div>
+        <div class="about">
+            <a href="#" title="Игры" onclick="slowScroll('#main')">Каталог игр</a>
+            <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+            <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+            <button class="btnLogin-popup">Вход</button>
+        </div>
+    </header>
+
+    <!-- <div class="card">
+        <h1>Корзина</h1>
+        <ul class="listCard"></ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Закрыть</div>
+        </div>
+    </div> -->
+    
+    <div id="top">
+        <h1>Продажа уникальных игр</h1>
+        <h3>Быстро и дешево!</h3>
+    </div>
+
+    <div id="main">
+            <h2>Каталог</h2>
+            <a href="" class="button1 open-popup1">
+                100₽
+                Купить
+            </a>
+            <a href="" class="button2 open-popup2">
+                200₽
+                Купить
+            </a>
+            <a href="" class="button3 open-popup3">
+                300₽
+                Купить
+            </a>
+        <div class="game-blocks">
+                <div id="kn">
+                    <a href="Minecraft.html" class="button">Minecraft</a>
+                </div>
+                <div id="kn2">
+                    <a href="Subnautica.html" class="button">Subnautica</a>     
+                </div>
+                <div id="kn3">
+                    <a href="Garry's mod.html" class="button">Garry's mod</a>   
+                </div>
+        </div>
+    </div>    
+
+    <div id="overview">
+        <h2>Преимущества</h2>
+        <div class="left-align">
+            <p>1. Удобство использования:
+                приобретать игры можно из любой точки мира, не выходя из дома.
+                Нет необходимости тратить время на посещение магазина или тратиться на допольнительный транспорт. 
+                Всё происходит онлайн, что делает процесс покупки максимально удобным.</p>  
+               <p>2. Доступная цена: 
+                онлайн-магазинам удалось снизить цены на игры благодаря экономии на аренде торговых площадей, обслуживающем персонале и других расходах. 
+                Таким образом, пользователь получает доступ к играм по более низкой цене.</p> 
+               <p>3. Быстрая доставка:
+                после оплаты игра доставляется на электронный адрес email в течении несколько минут, что делает процесс получения игры максимально быстрым и удобным.</p>
+               <p>4. Удобная оплата:
+                на сайте по продаже игр вы можете оплатить удобным способом оплаты - обычной банковской картой.</p> 
+        </div>
+    </div>
+    
+    <div id="faq">
+        <div>
+            <span class="title">Как будет проходить оплата?</span>
+            <p>Вы выбираете игру и нажимаете кнопку "Купить".</p>
+            <p>Сканируйте QR-код.</p>
+            <p>В комментариях указываете свой Email и оплачиваете.</p>
+            <p>Получаете заветную игру.</p>
+        </div>
+        <div>
+            <span class="title">Что входит в услуги сервиса?</span>
+            <p>Покупка игр: на сайте можно приобрести цифровые копии игр для разных платформ (например, для ПК).</p>
+        </div>
+        <div>
+            <span class="title">Какие гарантии есть?</span>
+            <p>Гарантия возврата денег - если вы не удовлетворены приобретённой игрой, вы можете вернуть её и получить полный возврат денежных средств.</p>
+            <p>Гарантия качества - это означает, что игра будет работать без каких-либо технических проблем или ошибок.</p>
+            <p>Гарантия подлинности - это означает, что продавец гарантирует, что игра является легальной и лицензионной копией.</p>
+        </div>
+    </div>
+
+    <div class="popup-bg">
+        <div class="popup">
+            <div class="input-block">
+                <span class="icon">
+                    <ion-icon name="logo-vk"></ion-icon>
+                    <a href="https://vk.com/wdmarket1" class="button">ВКонтакте</a>
+                </div>
+            <span class="close-popup">
+                <ion-icon name="close-circle-outline"></ion-icon>
+        </div>
+    </div>
+        
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js "></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js "></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop:$(id).offset().top
+            },500);
+        }
+
+        $(document).on("Scroll", function () {
+            if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        })
+    </script>
+</body>
+</html>

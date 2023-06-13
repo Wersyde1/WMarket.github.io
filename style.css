@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@200&family=Roboto+Mono:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+body {
+    background-image: url(img/imagefon.jpg);
+    background-blend-mode: multiply;
+    background-color: #4a6479;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 27px;
+    z-index: 101;
+}
+
+/* .container {
+    margin: auto;
+    transition: 0.5s;
+} */
+
+/* header .shopping {
+    position: relative;
+    text-align: left;
+}
+
+header .shopping img {
+    width: 30px;
+}
+
+header .shopping span {
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+.card {
+    
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: #453e3b;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.card h1 {
+    color: #e8bc0e;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.card .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkOut div {
+    background-color: #e8bc0e;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card .checkOut div:nth-child(2) {
+    background-color: #1c1f25;
+    color: #fff;
+}
+
+.active .card {
+    left: calc(100% - 500px);
+}
+
+.list .item {
+    text-align: center;
+    background-color: #dce0e1;
+    padding: 20px;
+    box-shadow: 0 50px #757676;
+    letter-spacing: 1px;
+}
+
+.list .item img {
+    width: 90%;
+}
+
+.list .item .title {
+    font-weight: 600;
+}
+
+.list .item .price {
+    margin: 10px;
+}
+.list .item button {
+    background-color: #1c1f25;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img {
+    width: 90%;
+}
+
+.listCard button {
+    width: auto;
+    background-color: #fff5;
+    border: none;
+}
+
+.listCard .count {
+    margin: 0 10px;
+} */
+
+        /* Лого */
+
+.logo {
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+}
+
+@media (min-width: 701px) {
+      .logo {
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+      }
+
+      .about {
+        float: right;
+        width: 67%;
+      }
+  }
+
+@media (max-width: 700px) {
+      .logo {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.5em;
+      }
+
+      .about {
+        float: left;
+        width: 100%;
+      }
+  }
+
+        /* Верхние кнопки */
+
+.about a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 20px;
+} 
+
+.about a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.about a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.about {
+    text-align: right;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.about > a {color: #fff;} 
+
+.about > a:hover {
+    color: #fff;
+    } 
+
+  .about > a:not(:last-child) {
+    margin-right: 5%;
+}
+
+.about .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: .5s;
+}
+
+.about .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+        /* Контакты */
+
+.message {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+}
+
+.message a {
+    width: 50px;
+    font-size: 1.1em;
+    height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    display: block;
+    color: #fff;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.message a:hover {
+    font-size: 1.1em;
+    background: #fff;
+    color: #162938;
+}
+
+.icon { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1.6em;
+    color: #000;
+}
+
+.popup-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    background: #fff;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+  
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow-y: visible;
+}
+
+        /* Главный текст */
+
+#top {
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    font-weight: 200;
+    user-select: none;
+}
+
+#top h1 {
+    color: #fff;
+    font-size: 5em;
+    padding-top: 20%;
+    
+}
+
+#top h3 {
+    color: #b6b4b4;
+    font-size: 3em;
+}
+
+        /* Блоки игр - Каталог */
+
+#main {
+    text-align: center; 
+    padding: 50px;
+    background-image: url(img/imagefon.jpg);
+    background-blend-mode: multiply;
+    background-color: #4a6479;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    color: #fff;
+    font-size: 1.3em;
+    user-select: none;
+}
+
+#main div {
+    width: 100%;
+    padding: 10px 107px;
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+#main h2 {
+    font-size: 2.7em;
+    margin-bottom: 50px;
+}
+
+#kn .button {
+    text-decoration: none;
+    display: inline-block;
+    width: 270px;
+    height: 400px;
+    line-height: 700px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Sans One', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #524f4e;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    transition: .5s;
+    justify-content: end;
+    background-image: url(img/Minecraft.png);
+    background-position: center;
+    background-size: cover;
+}
+ 
+#kn .button:hover {
+    background: #fff;
+    box-shadow: 0 7px 20px #fff;
+    color: #fff;
+    transform: translateY(-20px);
+    float: center;
+    background-image: url(img/Minecraft.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#kn2 .button {
+    display: flex;
+    text-decoration: none;
+    display: inline-block;
+    width: 270px;
+    height: 400px;
+    line-height: 700px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Sans One', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #524f4e;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .5s;
+    justify-content: end;
+    background-image: url(img/subnautica.jpg);
+    background-position: center;
+    background-size: cover;
+}
+ 
+#kn2 .button:hover {
+    background: #fff;
+    box-shadow: 0 10px 20px #fff;
+    color: #fff;
+    transform: translateY(-20px);
+    float: center;
+    background-image: url(img/subnautica.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#kn3 .button {
+    display: flex;
+    text-decoration: none;
+    display: inline-block;
+    width: 270px;
+    height: 400px;
+    line-height: 700px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Sans One', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #524f4e;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .5s;
+    justify-content: end;
+    background-image: url(img/GarrysMod.png);
+    background-position: center;
+    background-size: cover;
+}
+ 
+#kn3 .button:hover {
+    background: #fff;
+    box-shadow: 0 10px 20px #fff;
+    color: #fff;
+    transform: translateY(-20px);
+    float: center;
+    background-image: url(img/GarrysMod.png);
+    background-position: center;
+    background-size: cover;
+}
+
+        /* Преимущества */
+
+#overview {
+    float: left;
+    background-image: url(img/imagefon.jpg);
+    background-blend-mode: multiply;
+    background-color: #4a6479;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 300px 0;
+    padding-top: 300px;
+    width: 100%;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+
+#overview .left-align p {
+    -webkit-font-smoothing: antiliased;
+    color: #a2a0ac;
+    font-size: 1.2em;
+    padding-top: 50px;
+    padding-right: 20%;
+    padding-left: 20%;
+    line-height: 30px;
+    
+}
+
+#overview h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+        /* Ответы на вопросы */
+
+#faq {
+    background-image: url(img/imagefon.jpg);
+    background-blend-mode: multiply;
+    background-color: #4a6479;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+
+@media (min-widht: 801px) {
+    #faq div {
+        width: 25%;
+        margin-left: 6%;
+        float: left;
+      }
+}
+
+@media (max-widht: 800px) {
+    #faq div {
+        width: 80%;
+        margin-left: 10%;
+        float: left;
+      }
+}
+
+#faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+}
+
+#faq .title {
+    font-weight: lighter;
+    color: #fff;
+    font-size: 2em;
+}
+
+#faq p {
+    -webkit-font-smoothing: antiliased;
+    color: #a2a0ac;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    line-height: 30px;
+    padding-top: 20px;
+ 
+}
+
+        /* Иконка VK */
+
+.input-block a {
+    color: #000;
+    text-decoration: none;
+}
+
+        /* Кнопки оплаты */
+
+.button1 {
+    position: absolute;
+    top: 167%;
+    right: 75%;
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.button1:hover {
+    background: #42f3ac;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.button2 {
+    position: absolute;
+    top: 167%;
+    right: 47%;
+    align-self: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.button2:hover {
+    background: #42f3ac;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.button3 {
+    position: absolute;
+    top: 167%;
+    right: 19%;
+    align-self: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.button3:hover {
+    background: #42f3ac;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.popup-bg1 {
+    z-index: 19;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.popup1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.popup1 p {
+    color: #000;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.close-popup1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.popup-bg2 {
+    z-index: 19;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.popup2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.popup2 p {
+    color: #000;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.close-popup2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.popup-bg3 {
+    z-index: 19;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.popup3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.popup3 p {
+    color: #000;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.close-popup3 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
